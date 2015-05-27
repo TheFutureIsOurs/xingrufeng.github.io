@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Linux Shell学习 ##
 
 **type:**
