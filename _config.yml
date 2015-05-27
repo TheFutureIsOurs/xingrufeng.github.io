@@ -1,5 +1,5 @@
 name: ldm
-baseurl: /liudaiming.github.io
+baseurl: /
 layout: default
 title: 我的Blog
 markdown: maruku
