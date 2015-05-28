@@ -6,7 +6,7 @@ layout: default
 
 ##2015-05-27日更新##
 `写作说明：因为工作都是在linux下进行的，所以系统学习下linux，`
-`然后就把鸟哥的linux书拿出来复习下，顺便记录下，免得又忘了`
+`然后就把鸟哥的linux书拿出来复习下，以下摘自<<鸟哥的Linux私房菜>>。顺便记录下，免得又忘了`
 
 **type:**
 
@@ -58,6 +58,7 @@ layout: default
 	\]     end a sequence of non-printing characters
 
 	如下图：
+
  >![Alt text](static/img/2015/linux_ps1.jpg)
 
 ###2015-05-28日更新#
@@ -143,7 +144,8 @@ layout: default
 	name=${name-root}
 	说明：如果没有name值，则设为root
 	总结如下图：
-![Alt text](static/img/2015/linux_var_judge.jpg)
+
+>![Alt text](static/img/2015/linux_var_judge.jpg)
 
 	
 	
