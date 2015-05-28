@@ -147,35 +147,44 @@ layout: default
 
 >![Alt text]({{site.siteurl}}static/img/2015/linux_var_judge.jpg)
 
+**alias**
+
+	作用：别名设置
+	alias lm='ls -al | more'
+	取消别名：unalias
 	
-	
-**MarkdownPad** is a full-featured Markdown editor for Windows.
+**login shell&&no-login shell**
 
-### Built exclusively for Markdown ###
+	1. /etc/profile：这是系统整体癿讴定，你最好丌要修改这个档案；
+	2. ~/.bash_profile 戒 ~/.bash_login 戒 ~/.profile：属亍使用者个人讴定，你要改自己癿数据，就
+	写入这里！	
 
-Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.
 
-Give them a try:
 
-- **Bold** (`Ctrl+B`) and *Italic* (`Ctrl+I`)
-- Quotes (`Ctrl+Q`)
-- Code blocks (`Ctrl+K`)
-- Headings 1, 2, 3 (`Ctrl+1`, `Ctrl+2`, `Ctrl+3`)
-- Lists (`Ctrl+U` and `Ctrl+Shift+O`)
 
-### See your changes instantly with LivePreview ###
 
-Don't guess if your [hyperlink syntax](http://markdownpad.com) is correct; LivePreview will show you exactly what your document looks like every time you press a key.
 
-### Make it your own ###
 
-Fonts, color schemes, layouts and stylesheets are all 100% customizable so you can turn MarkdownPad into your perfect editor.
 
-### A robust editor for advanced Markdown users ###
 
-MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.
 
-With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
