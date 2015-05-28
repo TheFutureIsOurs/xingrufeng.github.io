@@ -59,7 +59,7 @@ layout: default
 
 	如下图：
 
- >![Alt text](static/img/2015/linux_ps1.jpg)
+ >![Alt text]({{site.siteurl}}static/img/2015/linux_ps1.jpg)
 
 ###2015-05-28日更新#
 **read:**
@@ -145,7 +145,7 @@ layout: default
 	说明：如果没有name值，则设为root
 	总结如下图：
 
->![Alt text](static/img/2015/linux_var_judge.jpg)
+>![Alt text]({{site.siteurl}}static/img/2015/linux_var_judge.jpg)
 
 	
 	
