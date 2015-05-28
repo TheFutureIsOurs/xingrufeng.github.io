@@ -5,6 +5,9 @@ layout: default
 ## Linux Shell学习 ##
 
 ##2015-05-27日更新##
+`写作说明：因为工作都是在linux下进行的，所以系统学习下linux，`
+`然后就把鸟哥的linux书拿出来复习下，顺便记录下，免得又忘了`
+
 **type:**
 
 	[root@www ~]# type [-tpa] name
