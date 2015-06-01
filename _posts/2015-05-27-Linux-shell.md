@@ -5,8 +5,9 @@ layout: default
 ## Linux Shell学习 ##
 
 ##2015-05-27日更新##
-`写作说明：因为工作都是在linux下进行的，所以系统学习下linux，`
-`然后就把鸟哥的linux书拿出来复习下，以下摘自<<鸟哥的Linux私房菜>>。顺便记录下，免得又忘了`
+	写作说明：因为工作都是在linux下进行的，所以系统学习下linux，
+	然后就把鸟哥的linux书拿出来复习下，以下摘自
+	<<鸟哥的Linux私房菜>>。顺便记录下，免得又忘了`
 
 **type:**
 
@@ -30,7 +31,8 @@ layout: default
 	\a an ASCII bell character (07)
 	\d     the date in "Weekday Month Date" format (e.g., "Tue May 26")
 	\D{format}
-	         the format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in a locale-specific time representation.  The braces are
+	         the format is passed to strftime(3) and the result is inserted into the prompt string; 
+		     an empty format results in a locale-specific time representation.  The braces are
 	         required
 	\e     an ASCII escape character (033)
 	\h     the hostname up to the first ‘.’
@@ -159,20 +161,86 @@ layout: default
 	2. ~/.bash_profile 戒 ~/.bash_login 戒 ~/.profile：属亍使用者个人讴定，你要改自己癿数据，就
 	写入这里！	
 
+##2015-05-29日更新##
+**stdout&&stderr:**
 
+	1> ：以覆盖癿方法将『正确癿数据』输出刡挃定癿档案戒装置上；
+	1>>：以累加癿方法将『正确癿数据』输出刡挃定癿档案戒装置上；
+	2> ：以覆盖癿方法将『错诨癿数据』输出刡挃定癿档案戒装置上；
+	2>>：以累加癿方法将『错诨癿数据』输出刡挃定癿档案戒装置上；
+	错误和正确信息都写入同一文件：
+	find ~/script/ > x 2>&1
+	find ~/script/ &> x
+**stdin**
 
+	< : cat > catfile < ~/x 把x里的内容写入catfile
+	<<: cat > catfile << "eof" 用cat 直接将输入癿讯息输出到 catfile 中，且当由键盘输入 eof 时，该次输入就结束
+##2015-05-31日更新##
+**截取命令:**
+>cut:
+>
+	[root@www ~]# cut -d'分隔字符' -f fields <==用亍有特定分隑字符
+	[root@www ~]# cut -c 字符区间 <==用亍排列整齐癿讯息
+	选项不参数：
+	-d ：后面接分隑字符。与-f 一起使用；
+	-f ：依据 -d 癿分隑字符将一段讯息分割成为数段，用 -f 叏出第几段癿意思；
+	-c ：以字符 (characters) 癿单位叏出固定字符区间；
+	如：echo $PATH | cut -d ':' -f 3,5
+	export | cut -c 12-
+>![Alt cut总结]({{site.siteurl}}static/img/2015/linux_cut.png)	
 
+>grep:
+>
+	[root@www ~]# grep [-acinv] [--color=auto] '搜寻字符串' filename
+	选项不参数：
+	-a ：将 binary 档案以 text 档案得方式搜寻数据
+	-c ：计算找到 '搜寻字符串' 癿次数
+	-i ：忽略大小写癿得不同，所以大小写规为相同
+	-n ：顺便输出行号
+	-v ：反向选择，亦即显示出没有 '搜寻字符串' 内容癿那一行！
+	--color=auto ：可以将找刡癿关键词部分加上颜色癿显示喔！
+	
+**排序和计数**
+> sort：
+>	
+>	[root@www ~]# sort [-fbMnrtuk] [file or stdin]
+	选项不参数：
+	-f ：応略大小写癿差异，例如 A 不 a 规为编码相同；
+	-b ：応略最前面癿空格符部分；
+	-M ：以月份癿名字杢排序，例如 JAN, DEC 等等癿排序方法；
+	-n ：使用『纯数字』迚行排序(默讣是以文字型态杢排序癿)；
+	-r ：反向排序；
+	-u ：就是 uniq ，相同癿数据中，仅出现一行代表；
+	-t ：分隑符，预讴是用 [tab] 键杢分隑；
+	-k ：以那个区间 (field) 杢迚行排序癿意思
+	如：cat /etc/passwd | sort -t ':' -k 3 /etc/passwd 内容是以 : 来分割得，
+	以第三栏来排序
+    last | cut -d ' ' -f1 | sort 用 last ，将输出癿数据仅取账号，加以排序
 
+>uniq:
+>
+	[root@www ~]# uniq [-ic]
+	选项不参数：
+	-i ：忽略大小写字符得不同；
+	-c ：进行计数
+	如：*last | cut -d ' ' -f1 | sort | uniq -c*
 
+>wc:
+>
+	[root@www ~]# wc [-lwm]
+	选项不参数：
+	-l ：仅列出行；
+	-w ：仅列出多少字(英文单字)；
+	-m ：多少字符；
 
+**tee：**
 
-
-
-
-
-
-
-
+	作用：tee 会同时将数据流分送到档案去与屏幕 (screen)；而输出到屏幕癿，其实就是 stdout ，可以与下个命令继续处理喔！
+	[root@www ~]# tee [-a] file
+	选项参数：
+	-a ：以累加 (append) 癿方式，将数据加入 file 当中！
+	如：last | tee last.list | cut -d " " -f1
+	:w !sudo tee % 在vim中保存正在编辑的文件而不需要必要的权限
 
 
 
