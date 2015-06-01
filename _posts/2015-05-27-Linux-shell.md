@@ -190,7 +190,7 @@ layout: default
 	export | cut -c 12-
 
 >![Alt cut总结]({{site.siteurl}}static/img/2015/linux_cut.png)	
-
+##2015-06-1日更新##
 >grep:
 >
 	[root@www ~]# grep [-acinv] [--color=auto] '搜寻字符串' filename
