@@ -190,7 +190,9 @@ layout: default
 	export | cut -c 12-
 
 >![Alt cut总结]({{site.siteurl}}static/img/2015/linux_cut.png)	
+
 ##2015-06-1日更新##
+
 >grep:
 >
 	[root@www ~]# grep [-acinv] [--color=auto] '搜寻字符串' filename
@@ -203,6 +205,7 @@ layout: default
 	--color=auto ：可以将找刡癿关键词部分加上颜色癿显示喔！
 	
 **排序和计数**
+
 > sort：
 >	
 >	[root@www ~]# sort [-fbMnrtuk] [file or stdin]
@@ -245,6 +248,7 @@ layout: default
 	:w !sudo tee % 在vim中保存正在编辑的文件而不需要必要的权限
 
 ##除去^M##
+
 >**tr:**
 >
 	[root@www ~]# tr [-ds] SET1 ...
@@ -268,6 +272,7 @@ layout: default
 	如：cd /tmp; split -b 300k /etc/termcap termcap
 
 ##正规表示法##
+
 **grep进阶**
 
 	[root@www ~]# grep [-A] [-B] [--color=auto] '搜寻字符串' filename
@@ -277,6 +282,34 @@ layout: default
 	--color=auto 可将正确癿那个撷取数据列出颜色
 	如：dmesg | grep -n -A3 -B2 --color=auto 'eth'
 	关键词所在行得前两行与后三行一起拿出来显示
+
+##2015-06-02更新##
+
+**sed**
+
+	[root@www ~]# sed [-nefr] [动作]
+	选项参数：
+	-n ：使用安静(silent)模式。在一般 sed 癿用法中，所有来自 STDIN得数据一般都会被列出到屏幕上。但如果加上 -n 参数后，则只有经过sed 特殊处理癿那一行(或者动作)才会被列出来。
+	-e ：直接在指令列模式上进行行 sed 的动作编辑；
+	-f ：直接将 sed 得动作写在一个档案内， -f filename 则可以执行 filename 内得sed 动作；
+	-r ：sed 癿动作支持的是延伸型正规表示法癿语法。(预设是基础正规表示法雨语法)
+	-i ：直接修改读取的档案内容，而不是由屏幕输出。
+	动作说明： [n1[,n2]]function
+	n1, n2 ：不见得会存在，一般代表『选择进行动作得行数』，举例来说，如果我得动作
+	是需要在 10 到 20 行之间进行的，则『 10,20[动作得行为]』
+	function 有底下这些咚咚：
+	a ：新增， a 的后面可以接字符串，而这些字符串会在新的一行出现(目前的下一行)～
+	c ：取代， c 的后面可以接字符串，这些字符串可以取代 n1,n2之间的行！
+	d ：删除，因为是删除啊，所以 d 后面通常不接任何咚咚；
+	i ：插入， i 的后面可以接字符串，而这些字符串会在新的一行出现(目前的上一行)；
+	p ：打印，亦即将某个选择的数据印出。通常 p 会与参数 sed -n 一起运作～
+	s ：取代，可以直接进行取代得工作哩！通常这个 s 癿动作可以搭配
+	正规表示法！例如 1,20s/old/new/g 就是啦！
+	如：nl /etc/passwd | sed '2a drink tea'
+	nl /etc/passwd | sed '2,5d'
+	 nl /etc/passwd | sed -n '2,5p'
+	sed 's/要被叏代癿字符串/新癿字符串/g'
+	sed -i '$a # This is a test' regular_express.txt
 
 
 
