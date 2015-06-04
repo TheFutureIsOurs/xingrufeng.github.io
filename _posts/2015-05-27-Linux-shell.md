@@ -308,8 +308,58 @@ layout: default
 	如：nl /etc/passwd | sed '2a drink tea'
 	nl /etc/passwd | sed '2,5d'
 	 nl /etc/passwd | sed -n '2,5p'
-	sed 's/要被叏代癿字符串/新癿字符串/g'
+	sed 's/要被取代癿字符串/新癿字符串/g'
 	sed -i '$a # This is a test' regular_express.txt
+
+##2015-06-03更新##
+**printf:**
+
+	[root@www ~]# printf '打印格式' 实际内容
+	选项参数：
+	关亍格式方面癿几个特殊样式：
+	\a 警告声音输出
+	\b 退格键(backspace)
+	\f 清除屏幕 (form feed)
+	\n 输出新的一行
+	\r 亦即 Enter 按键
+	\t 水平的 [tab] 按键
+	\v 垂直的 [tab] 按键
+	\xNN NN 为两位数癿数字，可以转换数字成为字符。
+	关亍 C 程序语言内，常见的变数格式
+	%ns 那个 n 是数字， s 代表 string ，亦即多少个字符；
+	%ni 那个 n 是数字， i 代表 integer ，亦即多少整数字数；
+	%N.nf 那个 n 不 N 都是数字， f 代表 floating (浮点)，如果有小数字数，
+	假设我共要十个位数，但小数点有两位，即为 %10.2f 啰！
+
+**awk:**
+
+	[root@www ~]# awk '条件类型 1{动作 1} 条件类型 2{动作 2} ...' filename
+
+![Alt awk变量]({{site.siteurl}}static/img/2015/linux_awk_params.jpg)
+
+	如：last -n 5| awk '{print $1 "\t lines: " NR "\t columes: " NF}'
+	cat /etc/passwd | awk '{FS=":"} $3<10 {print $1 "\t" $3}'
+	cat /etc/passwd | awk 'BEGIN {FS=":"} $3<10 {print $1 "\t" $3}'
+	cat pay.txt | awk 'NR==1 {printf "%10s %10s %10s %10s %10s\n",$1,$2,$3,$4,"Total"} NR>=2 {total=$2+$3+$4; printf "%10s %10d %10d %10d %10.2f\n",$1,$2,$3,$4,total}'
+
+##2015-06-04更新##
+
+**diff:**
+	[root@www ~]# diff [-bBi] from-file to-file
+	选项不参数：
+	from-file ：一个档名，作为原始比对档案的档名；
+	to-file ：一个档名，作为目癿比对档案的档名；
+	注意，from-file 戒 to-file 可以 - 取代，那个 - 代表『Standard input』之意。
+	-b ：忽略一行当中，仅有多个空白的差异(例如 "about me" 不 "about me"
+	规为相同
+	-B ：忽略空白行的差异。
+	-i ：忽略大小写的的同。
+
+
+
+
+
+
 
 
 
