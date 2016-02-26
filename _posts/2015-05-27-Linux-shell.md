@@ -64,7 +64,7 @@ layout: default
 
 	如下图：
 
- >![Alt text]({{site.url}}static/img/2015/linux_ps1.jpg)
+ >![Alt text]({{site.url}}/static/img/2015/linux_ps1.jpg)
 
 ###2015-05-28日更新#
 **read:**
@@ -150,7 +150,7 @@ layout: default
 	说明：如果没有name值，则设为root
 	总结如下图：
 
->![Alt text]({{site.url}}static/img/2015/linux_var_judge.jpg)
+>![Alt text]({{site.url}}/static/img/2015/linux_var_judge.jpg)
 
 **alias**
 
@@ -192,7 +192,7 @@ layout: default
 	如：echo $PATH | cut -d ':' -f 3,5
 	export | cut -c 12-
 
->![Alt cut总结]({{site.url}}static/img/2015/linux_cut.png)	
+>![Alt cut总结]({{site.url}}/static/img/2015/linux_cut.png)	
 
 ##2015-06-1日更新##
 
@@ -338,7 +338,7 @@ layout: default
 
 	[root@www ~]# awk '条件类型 1{动作 1} 条件类型 2{动作 2} ...' filename
 
-![Alt awk变量]({{site.url}}static/img/2015/linux_awk_params.jpg)
+![Alt awk变量]({{site.url}}/static/img/2015/linux_awk_params.jpg)
 
 	如：last -n 5| awk '{print $1 "\t lines: " NR "\t columes: " NF}'
 	cat /etc/passwd | awk '{FS=":"} $3<10 {print $1 "\t" $3}'
