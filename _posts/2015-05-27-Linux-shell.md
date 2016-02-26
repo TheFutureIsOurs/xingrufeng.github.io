@@ -69,7 +69,9 @@ categories: shell
 
  >![Alt text]({{site.url}}/static/img/2015/linux_ps1.jpg)
 
-###2015-05-28日更新#
+2015-05-28日更新
+----------------
+
 **read:**
 
 	read [-pt] variable
@@ -168,7 +170,9 @@ categories: shell
 	写入这里！	
 	bash 癿配置文件主要分为 login shell 与 non-login shell。login shell 主要读取 /etc/profile与 ~/.bash_profile， non-login shell 则仅读取 ~/.bashrc
 
-##2015-05-29日更新##
+2015-05-29日更新
+----------------
+
 **stdout&&stderr:**
 
 	1> ：以覆盖癿方法将『正确癿数据』输出刡挃定癿档案戒装置上；
@@ -182,7 +186,9 @@ categories: shell
 
 	< : cat > catfile < ~/x 把x里的内容写入catfile
 	<<: cat > catfile << "eof" 用cat 直接将输入癿讯息输出到 catfile 中，且当由键盘输入 eof 时，该次输入就结束
-##2015-05-31日更新##
+2015-05-31日更新
+----------------
+
 **截取命令:**
 >cut:
 >
@@ -197,7 +203,8 @@ categories: shell
 
 >![Alt cut总结]({{site.url}}/static/img/2015/linux_cut.png)	
 
-##2015-06-1日更新##
+2015-06-1日更新
+----------------
 
 >grep:
 >
@@ -289,7 +296,8 @@ categories: shell
 	如：dmesg | grep -n -A3 -B2 --color=auto 'eth'
 	关键词所在行得前两行与后三行一起拿出来显示
 
-##2015-06-02更新##
+2015-06-02更新
+----------------
 
 **sed**
 
@@ -317,7 +325,9 @@ categories: shell
 	sed 's/要被取代癿字符串/新癿字符串/g'
 	sed -i '$a # This is a test' regular_express.txt
 
-##2015-06-03更新##
+2015-06-03更新
+----------------
+
 **printf:**
 
 	[root@www ~]# printf '打印格式' 实际内容
@@ -348,7 +358,8 @@ categories: shell
 	cat /etc/passwd | awk 'BEGIN {FS=":"} $3<10 {print $1 "\t" $3}'
 	cat pay.txt | awk 'NR==1 {printf "%10s %10s %10s %10s %10s\n",$1,$2,$3,$4,"Total"} NR>=2 {total=$2+$3+$4; printf "%10s %10d %10d %10d %10.2f\n",$1,$2,$3,$4,total}'
 
-##2015-06-04更新##
+2015-06-04更新
+----------------
 
 **diff:**
 	[root@www ~]# diff [-bBi] from-file to-file
@@ -361,7 +372,9 @@ categories: shell
 	-B ：忽略空白行的差异。
 	-i ：忽略大小写的的同。
 
-##2015-06-05更新##
+2015-06-05更新
+----------------
+
 **useradd**
 	
 	[root@www ~]# useradd [-u UID] [-g 初始群组] [-G 次要群组] [-mM]\
@@ -382,7 +395,9 @@ categories: shell
 	-f ：后面接 shadow 癿第七字段项目，指定密码是否会失效。0 为立刻失效，
 	-1 为永进不失效(密码叧会过期而强制于登入时重新训定而已。)
 
-##2015-06-08更新##
+2015-06-08更新
+----------------
+
 **服务器相关**
 
 top,free,uptime,netstat,dmesg,vmstat
