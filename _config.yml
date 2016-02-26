@@ -8,6 +8,9 @@ url: "http://www.imflybird.cn" # the base hostname & protocol for your site
 twitter_username: liudaiming
 github_username:  liudaiming
 excerpt_separator: <!--more-->
+
+# Gems
+gems: [jekyll-paginate]
 paginate: 5
 
 # Build settings

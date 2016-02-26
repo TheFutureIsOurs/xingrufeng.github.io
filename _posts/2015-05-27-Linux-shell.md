@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post
+title:  "Linux Shell学习"
+date:   2015-05-27
+categories: shell
 ---
-
-## Linux Shell学习 ##
-
 
 	写作说明：因为工作都是在linux下进行的，所以系统学习下linux，
 	然后就把鸟哥的linux书拿出来复习下，以下摘自
@@ -12,6 +12,7 @@ layout: default
 <!--more-->
 
 ##2015-05-27日更新##
+
 **type:**
 
 	[root@www ~]# type [-tpa] name
