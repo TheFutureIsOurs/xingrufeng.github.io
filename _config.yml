@@ -11,5 +11,4 @@ excerpt_separator: <!--more-->
 paginate: 5
 
 # Build settings
-markdown: kramdown
 host: 0.0.0.0
