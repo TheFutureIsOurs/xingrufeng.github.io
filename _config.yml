@@ -1,0 +1,15 @@
+# Site settings
+title: 程序乐园
+email: ldmbj2012@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  只要有树叶飞舞的地方，火就会燃烧，火的影子会照耀着村子，树叶还会重新发芽。
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://liudaiming.cn" # the base hostname & protocol for your site
+twitter_username: liudaiming
+github_username:  liudaiming
+excerpt_separator: <!--more-->
+paginate: 5
+
+# Build settings
+markdown: kramdown
+host: 0.0.0.0
