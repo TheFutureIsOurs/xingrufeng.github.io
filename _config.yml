@@ -13,5 +13,7 @@ excerpt_separator: <!--more-->
 gems: [jekyll-paginate]
 paginate: 5
 
+safe: false
+
 # Build settings
 host: 0.0.0.0
