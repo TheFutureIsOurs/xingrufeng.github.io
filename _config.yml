@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   只要有树叶飞舞的地方，火就会燃烧，火的影子会照耀着村子，树叶还会重新发芽。
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.imflybird.cn" # the base hostname & protocol for your site
-twitter_username: liudaiming
-github_username:  liudaiming
+twitter_username: 
+github_username:  TheFutureIsOurs
 excerpt_separator: <!--more-->
 
 # Gems
@@ -17,3 +17,11 @@ safe: false
 
 # Build settings
 host: 0.0.0.0
+
+# Gitalk
+gitalk:
+  clientID: eeb65bab6812d9ea865b                            #生成的clientID
+  clientSecret: 3190b84acf7412c8be4f6a164e56e6c8cc3c92c2    #生成的clientSecret
+  repo: liudaiming.github.io    #仓库名称
+  owner: TheFutureIsOurs    #github用户名
+  admin: TheFutureIsOurs
