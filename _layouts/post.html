@@ -47,7 +47,13 @@ layout: default
                     {% endif %}
                 </ul>
                 <hr style="visibility: hidden;">
-
+				
+				{% if site.gitalk %}
+				<!-- gitalk 评论框 end -->
+				<div id="gitalk-container"></div>
+				<!-- gitalk 评论框 end -->
+				{% endif %}
+				
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
                 <div class="comment">
@@ -121,7 +127,6 @@ layout: default
 	<!-- gitalk start -->
 	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 	<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-	<div id="gitalk-container"></div>
 	<script src="{{ site.baseurl }}/js/md5.min.js"></script>
 	<script type="text/javascript">
 	var gitalk = new Gitalk({
