@@ -114,6 +114,8 @@ MongoID使用12个字节来表示,每个字节两位十六进制。如下图：
 
 运行机器：联想小新pro13 Ryzen 5 3550H
 
+go版本：1.15
+
 	goos: windows
 	goarch: amd64
 	BenchmarkSnowflake-8
