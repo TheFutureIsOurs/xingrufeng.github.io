@@ -1,10 +1,10 @@
 # Site settings
-title: Lw Blog
-SEOTitle: 刘文的博客 | LW Blog
+title: 行如风 Blog
+SEOTitle: 行如风的博客 | 行如风 Blog
 header-img: img/home-bg.jpg
 email: ldmbj2012@gmail.com
 description: "只要有树叶飞舞的地方，火就会燃烧，火的影子会照耀着村子，树叶还会重新发芽。"
-keyword: "刘文的博客, Lw Blog, 博客, 个人网站, 互联网, Web"
+keyword: "行如风的博客, 博客, 个人网站, 互联网, Web"
 url: "http://www.imflybird.cn/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
