@@ -45,7 +45,7 @@ tags:
 
 MongoID使用12个字节来表示,每个字节两位十六进制。如下图：
 
-![](/static/img/2020/mongoid.png)
+![](http://imflybird.cn/static/img/2020/mongoid.png)
 
 而平时业务中需要先生成ID供业务方使用，那有哪些方案呢？
 
@@ -86,7 +86,7 @@ MongoID使用12个字节来表示,每个字节两位十六进制。如下图：
 
 使用了8字节（64位），比MongoID位数少4字节，具体如下：
 
-![](/static/img/2020/Snowflake.png)
+![](http://imflybird.cn/static/img/2020/Snowflake.png)
 
 其生成的结果为int64。其中第一位保留不用（正数），其余位具体见上图。
 
@@ -129,13 +129,13 @@ go版本：1.15
 
 方案五：
 
-流星算法
+[流星算法](https://github.com/TheFutureIsOurs/meteor)
 
 也是64位，
 
 算法组成：
 
-![](/static/img/2020/meteor.png)
+![](http://imflybird.cn/static/img/2020/meteor.png)
 
 设计初衷：
 
