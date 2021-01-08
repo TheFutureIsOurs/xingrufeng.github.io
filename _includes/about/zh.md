@@ -26,7 +26,7 @@ Hi,我是行如风。
 
 编程语言：Go / Lua / Php / Python
 
-常用大数据处理工具：Spark、Flink、Map Reduce
+常用大数据处理工具：Spark、Flink、Map Reduce、Hive
 
 
 ## 个人经历
