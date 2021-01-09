@@ -67,8 +67,5 @@ Hi,我是行如风。
 
 [我的掘金](https://juejin.cn/user/3350967174039768)
 
-公众号
-
-![](https://www.imflybird.cn/img/gzh.jpg)
 
 
