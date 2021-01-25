@@ -49,7 +49,7 @@ tags:
 
 MongoID使用12个字节来表示,每个字节两位十六进制。如下图：
 
-![](http://imflybird.cn/static/img/2020/mongoid.png)
+![](https://www.imflybird.cn/static/img/2020/mongoid.png)
 
 而平时业务中需要先生成ID供业务方使用，那有哪些方案呢？
 
