@@ -19,7 +19,7 @@ Hi,我是行如风。
 
 常用编程语言：Go / Lua / Php / Python
 
-常用大数据处理工具：Spark、Flink、Map Reduce、Hive
+常用大数据处理工具：Spark、Flink、Hadoop、Hive
 
 [我的github](https://github.com/TheFutureIsOurs)
 
@@ -36,7 +36,9 @@ Hi,我是行如风。
 
 > 角色：web服务端技术专家
 > 
-> 负责[360地图](https://ditu.so.com)web服务端的架构设计、研发和[360地图](https://ditu.so.com)商业化
+> 负责[360地图](https://ditu.so.com)web服务端的架构设计、研发和优化
+> 
+> 负责360地图商业化web服务端架构设计、研发和优化
 > 
 > 负责大数据挖掘及自动化报表
 
