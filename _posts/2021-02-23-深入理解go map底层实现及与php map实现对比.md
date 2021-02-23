@@ -825,7 +825,7 @@ struct _zend_array {
 > 
 > 2.如果ht->nTableSize < HT_MAX_SIZE，则会进行双倍扩容。此时会申请双倍容量内存，并把之前的数据全部拷贝到新地址，释放旧内存，然后重新hash
 
-重新hash时，如果存在空洞（删除导致元素数组空洞），则需要从前往后，把删除的元素往迁移，把空洞给填满（使数据更紧凑）。对应函数为[zend_hash_rehash(HashTable *ht)](https://sourcegraph.com/github.com/php/php-src@PHP-7.4.15/-/blob/Zend/zend_hash.c#L1171:28)
+重新hash时，如果存在空洞（删除导致元素数组空洞），则需要从前往后，把删除的元素往前移，把空洞给填满（使数据更紧凑）。对应函数为[zend_hash_rehash(HashTable *ht)](https://sourcegraph.com/github.com/php/php-src@PHP-7.4.15/-/blob/Zend/zend_hash.c#L1171:28)
 
 # 对比
 
