@@ -792,7 +792,7 @@ struct _zend_array {
 
 ![](https://www.imflybird.cn/static/img/2020/php/map/map.png)
 
-## 添加
+### 添加
 
 对应函数：[zend_hash_index_add_or_update()](https://sourcegraph.com/github.com/php/php-src@PHP-7.4.15/-/blob/Zend/zend_hash.c#L1043:30)
 
@@ -806,15 +806,15 @@ struct _zend_array {
 ![](https://www.imflybird.cn/static/img/2020/php/map/hash-clock.png)
 
 
-## 查找
+### 查找
 
 先在索引表中拿到数组元素的idx，然后拿到数据，如果key不等，在其val.u2.next中进行比较，直至结束。
 
-## 删除
+### 删除
 
 先找到该元素，然后将该位置数据val.type置为IS_UNDEF，并不移动数据。
 
-## 扩容
+### 扩容
 
 在添加的过程中，如果已使用的buckets数量到达元素数组总容量，则触发扩容，对应函数为[zend_hash_do_resize()](https://sourcegraph.com/github.com/php/php-src@PHP-7.4.15/-/blob/Zend/zend_hash.c#L1146:27)。
 
