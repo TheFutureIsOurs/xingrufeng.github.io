@@ -561,7 +561,7 @@ for {
 * 遍历顺序：从当前bmap开始，从前往后遍历，如果找不到，会从overflow的bmap中继续查找
 * 我们考虑两种情况：
 * 1.刚初始化完毕：此时每个bmap的tophash均为emptyRest(即0值)，所以找到了当前的插入点直接跳出bucketloop标签。
-* 2.被删除过,则tophash值为emptyOne(即1值)，如当前bmap的tophash为|1|1|1|76|0|0|0|0|，则会优先插入到第一个值为1的位置。此时还要继续遍历看是否有和计算出的top值相等的tophash值没，如果有，且key值相等，则更新插入点。
+* 2.被删除过,则tophash值为emptyOne(即1值)，如当前bmap的tophash为：|1|1|1|76|0|0|0|0|，则会优先插入到第一个值为1的位置。此时还要继续遍历看是否有和计算出的top值相等的tophash值没，如果有，且key值相等，则更新插入点。
 * 可以看出插入赋值是一个紧凑的过程（有空位时优先往插入前面的）
 
 ```go
@@ -584,7 +584,7 @@ if insertb == nil {
 
 其实，是编译器生成的汇编指令来完成值的存储的，我们用gdb来看下反汇编代码：
 
-```code shell
+```shell
 
    0x00000000004999e0 <+160>:	callq  0x4117c0 <runtime.mapassign_faststr>
    0x00000000004999e5 <+165>:	mov    0x20(%rsp),%rax
