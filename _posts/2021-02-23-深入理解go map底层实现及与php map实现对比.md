@@ -10,7 +10,7 @@ tags:
 
 ## 前言
 
-之前在[openresty协程调度对比go协程调度](https://www.imflybird.cn/2021/01/07/openresty%E5%8D%8F%E7%A8%8B%E8%B0%83%E5%BA%A6%E5%AF%B9%E6%AF%94go%E5%8D%8F%E7%A8%8B%E8%B0%83%E5%BA%A6/)文章中我们讲诉了go程序启动过程(从go程序开始执行到用户的main程序执行前发生了些什么)，今天结合一个简短例子说下go map的底层实现（顺便看下在编译阶段发生了什么），同时对比下php的map实现
+之前在[openresty协程调度对比go协程调度](https://www.imflybird.cn/2021/01/07/openresty%E5%8D%8F%E7%A8%8B%E8%B0%83%E5%BA%A6%E5%AF%B9%E6%AF%94go%E5%8D%8F%E7%A8%8B%E8%B0%83%E5%BA%A6/)文章中分析了go程序启动过程(从go程序开始执行到用户的main程序执行前发生了些什么)，今天结合一个简短例子说下go map的底层实现（顺便看下在编译阶段发生了什么），同时对比下php的map实现
 
 # go map实现
 
@@ -19,7 +19,7 @@ tags:
 
 一段简单的代码如下：
 
-```code go
+```go
 
 package main
 import (
@@ -349,7 +349,9 @@ cmd/compile/internal/ssa（SSA多轮传递及规则）
 
 > 如：GOSSAFUNC=maps go build main.go
 
-** 注意 **，笔者当前版本为1.15.6，如果对main方法执行ssa生成会报panic，
+** 说明 **
+
+笔者当前版本为1.15.6，如果对main方法执行ssa生成会报panic，
 
 
 [这个issue](https://github.com/golang/go/issues/40919)会在1.16版本进行修复
