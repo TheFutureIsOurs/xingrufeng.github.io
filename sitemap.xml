@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
+<url>
+ <loc>https://www.imflybird.cn/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/about/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/archive/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/2021/01/25/boltdb%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/2021/01/07/openresty%E5%8D%8F%E7%A8%8B%E8%B0%83%E5%BA%A6%E5%AF%B9%E6%AF%94go%E5%8D%8F%E7%A8%8B%E8%B0%83%E5%BA%A6/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/2020/12/20/%E4%BB%8E%E4%B8%80%E4%B8%AA%E6%A8%A1%E7%B3%8A%E8%AF%8D%E6%9F%A5%E8%AF%A2%E9%9C%80%E6%B1%82%E7%9A%84%E5%A4%84%E7%90%86%E6%96%B9%E6%A1%88%E8%AE%A8%E8%AE%BA%E5%88%B0%E4%B8%80%E7%A7%8D%E6%9E%81%E9%80%9F%E5%8C%B9%E9%85%8D%E6%96%B9%E6%A1%88%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/2020/12/09/%E4%BB%8EMongoID%E8%AE%A8%E8%AE%BA%E5%88%86%E5%B8%83%E5%BC%8F%E5%94%AF%E4%B8%80ID%E7%94%9F%E6%88%90%E6%96%B9%E6%A1%88/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/2020/08/09/%E8%AE%B0%E4%B8%80%E6%AC%A1cpu-100-%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/2020/05/09/git-push%E9%81%BF%E5%85%8D%E6%AF%8F%E6%AC%A1%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/leetcode/2020/04/29/%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/hadoop/hdfs/2020/04/28/hdfs%E6%A3%80%E6%B5%8B%E6%96%87%E4%BB%B6%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/elasticsearch/2020/04/27/elasticsearch-docker-compose%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/linux/2016/07/06/Linux/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/page2</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/archive/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/archive/?tag=Openresty</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/php/2016/06/20/php-unit/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/nginx/2016/03/02/nginx%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E9%98%B6%E6%AE%B5%E9%A1%BA%E5%BA%8F/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/lua/2015/08/19/lua/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/tools/2015/06/19/%E5%B7%A5%E5%85%B7%E6%9D%82%E5%90%88/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/php/2015/06/18/php%E6%89%A9%E5%B1%95%E5%BC%80%E5%8F%91-%E6%BA%90%E7%A0%81%E7%A0%94%E7%A9%B6/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/mongodb/2015/06/12/MongoDB/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/c/2015/06/10/Linux-C/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/shell/2015/05/27/Linux-shell/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-2-23</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+</urlset>
