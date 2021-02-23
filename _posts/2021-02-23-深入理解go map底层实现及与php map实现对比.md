@@ -14,7 +14,7 @@ tags:
 
 # go map实现
 
-** 说明：go版本：1.15.6，平台：linux **
+**说明：go版本：1.15.6，平台：linux**
 
 
 一段简单的代码如下：
@@ -350,9 +350,7 @@ cmd/compile/internal/ssa（SSA多轮传递及规则）
 
 > 如：GOSSAFUNC=maps go build main.go
 
-** 说明 **
-
-笔者当前版本为1.15.6，如果对main方法执行ssa生成会报panic，
+**说明:** 笔者当前版本为1.15.6，如果对main方法执行ssa生成会报panic
 
 
 [这个issue](https://github.com/golang/go/issues/40919)会在1.16版本进行修复
@@ -737,7 +735,7 @@ useY=1，则说明hash值后三位为1??，现在的bucket=110,即
 
 # PHP的map实现
 
-** php版本:7.4.15 **
+**php版本:7.4.15**
 
 其实在php中，在语言层面，准确来说叫数组，而数组底层实现了map的功能。我们知道，map的key定位是需要hash函数来实现O(1)查询的，是无序的，而php中是如何兼顾数组的有序及hash函数的映射呢？
 
