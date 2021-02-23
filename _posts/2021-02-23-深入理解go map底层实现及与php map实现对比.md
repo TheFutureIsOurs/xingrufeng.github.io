@@ -337,6 +337,7 @@ func TestParser(t *testing.T) {
 源码地址：
 
 cmd/compile/internal/gc（AST转换成SSA）
+
 cmd/compile/internal/ssa（SSA多轮传递及规则）
 
 在这个阶段，AST会被转换为SSA（静态单赋值，Static Single Assignment）形式的中间代码，同时关键字，操作符会被转换成runtime函数。
@@ -561,7 +562,7 @@ for {
 * 遍历顺序：从当前bmap开始，从前往后遍历，如果找不到，会从overflow的bmap中继续查找
 * 我们考虑两种情况：
 * 1.刚初始化完毕：此时每个bmap的tophash均为emptyRest(即0值)，所以找到了当前的插入点直接跳出bucketloop标签。
-* 2.被删除过,则tophash值为emptyOne(即1值)，如当前bmap的tophash为：|1|1|1|76|0|0|0|0|，则会优先插入到第一个值为1的位置。此时还要继续遍历看是否有和计算出的top值相等的tophash值没，如果有，且key值相等，则更新插入点。
+* 2.被删除过,则tophash值为emptyOne(即1值)，如当前bmap的tophash为：\|1\|1\|1\|76\|0\|0\|0\|0\|，则会优先插入到第一个值为1的位置。此时还要继续遍历看是否有和计算出的top值相等的tophash值没，如果有，且key值相等，则更新插入点。
 * 可以看出插入赋值是一个紧凑的过程（有空位时优先往插入前面的）
 
 ```go
@@ -659,6 +660,7 @@ for {
 在赋值阶段，可能会触发扩容，触发条件为：
 
 > 1.本次元素如果插入，负载将达到临界点：插入的元素数量 > 负载因子*2^B；此时容量需扩大一倍
+> 
 > 2.bmap的overflow过多，overflow数量 >= 2^(B&15)的数量。此时容量不变，目的仅是使排除删除造成的空洞，减少overflow，使数据结构更紧凑
 
 我们看下过程：
@@ -785,7 +787,7 @@ struct _zend_array {
 > 如果插入时出现了hash冲突，通过拉链法解决hash冲突，新插入的这个元素的val.u2.next为该key所在索引表内存储的索引值。
 
 
-索引计算方法：nIndex = h | ht->nTableMask;
+索引计算方法：nIndex = h \| ht->nTableMask;
 
 其中h为key经过times 33算法后的值，对应计算函数为：[zend_inline_hash_func(const char *str, size_t len)](https://sourcegraph.com/github.com/php/php-src@PHP-7.4.15/-/blob/Zend/zend_string.h#L364:38)
 
