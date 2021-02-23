@@ -781,6 +781,7 @@ struct _zend_array {
 > 
 > 
 > 2.索引表，其和数组元素容量等长。存储每个key在数组元素中的索引idx。
+> 
 > 如果插入时出现了hash冲突，通过拉链法解决hash冲突，新插入的这个元素的val.u2.next为该key所在索引表内存储的索引值。
 
 
@@ -819,6 +820,7 @@ struct _zend_array {
 在添加的过程中，如果已使用的buckets数量到达元素数组总容量，则触发扩容，对应函数为[zend_hash_do_resize()](https://sourcegraph.com/github.com/php/php-src@PHP-7.4.15/-/blob/Zend/zend_hash.c#L1146:27)。
 
 > 1.如果ht->nNumUsed > ht->nNumOfElements + (ht->nNumOfElements >> 5)，则不更改容量，仅重新hash
+> 
 > 2.如果ht->nTableSize < HT_MAX_SIZE，则会进行双倍扩容。此时会申请双倍容量内存，并把之前的数据全部拷贝到新地址，释放旧内存，然后重新hash
 
 重新hash时，如果存在空洞（删除导致元素数组空洞），则需要从前往后，把删除的元素往迁移，把空洞给填满（使数据更紧凑）。对应函数为[zend_hash_rehash(HashTable *ht)](https://sourcegraph.com/github.com/php/php-src@PHP-7.4.15/-/blob/Zend/zend_hash.c#L1171:28)
