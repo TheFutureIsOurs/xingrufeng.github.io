@@ -45,7 +45,7 @@ dst.b.tophash[dst.i&(bucketCnt-1)] = top // mask dst.i as an optimization, to av
 > 
 > 2.使用命令查看ssa的check_bce阶段：go build -gcflags="-d=ssa/check_bce/debug"
 > 
-> 其结构为：-d=ssa\/\<phase\>\/<flag>\[=<value>\|\<function_name\>\]
+> 其结构为：-d=ssa/\<phase\>/\<flag\>\[=\<value\>\|\<function_name\>\]
 > 
 > value默认为1
 
