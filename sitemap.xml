@@ -21,7 +21,13 @@
 <url>
  <loc>https://www.imflybird.cn/archive/</loc>
  <priority>0.5</priority>
- <lastmod>2021-02-23</lastmod>
+ <lastmod>2021-02-27</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://www.imflybird.cn/2021/02/27/go-bounds-check(%E8%BE%B9%E7%95%8C%E6%A3%80%E6%B5%8B)/</loc>
+ <priority>0.5</priority>
+ <lastmod>2021-02-27</lastmod>
  <changefreq>monthly</changefreq>
 </url>
 <url>
