@@ -27,7 +27,6 @@ Hi,我是行如风。
 
 [我的掘金](https://juejin.cn/user/3350967174039768)
 
-[我的头条](https://www.toutiao.com/c/user/token/MS4wLjABAAAAKa7kLUZHj5kyHZ8RXMnG6TnC3C3Pc0NSlcNPQNMuyGA/)
 
 
 ## 个人经历
