@@ -14,7 +14,7 @@ tags:
 
 在go web开发中，很多时候会选用一款web框架，随着项目功能增加，接口也越来越多，一款好的路由框架能很方便的帮助我们管理与维护繁多的接口地址。
 
-抽空看了下[httprouter](https://github.com/julienschmidt/httprouter)的源码，代码量很少（去掉空白和注释也就600行左右），本次就的源码记录下，以留备忘。
+抽空看了下[httprouter](https://github.com/julienschmidt/httprouter)的源码(gin框架内置了定制的httprouter)，代码量很少（去掉空白和注释也就600行左右），本次就的源码记录下，以留备忘。
 
 httprouter版本：1.3.0
 
